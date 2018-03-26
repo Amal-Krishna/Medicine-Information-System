@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This website helps you to easily find any information about medicines and it's availability">
+    <meta name="keywords" content="medicine information,medicine avilability,medicine help,medicine search">
+    <meta name="author" content="Amal Krishna">
+    <title>Medinfo | About </title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script type="text/javascript">
+      function check()
+      {
+        var x = document.getElementById('med').value;
+        if(x == "")
+        {
+          alert("pleace enter a valid name !");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <header>
+    <div class="container" >
+      <div id="branding" >
+         <h1><span class="highlight">Med</span> Info</h1>
+       </div>
+       <nav>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="categories.html">Categories</a></li>
+           <li><a href="news.html">News</a></li>
+           <li class="current"><a href="about.html">About</a></li>
+         </ul>
+       </nav>
+     </div>
+  </header>
+  <section id="searching">
+    <div class="container">
+      <h1>Search </h1>
+      <form action="" method="post" onsubmit="check()">
+        <input id="med"  type="text" name="medicine" placeholder="search"/>
+        <input type="submit"  value="Search" class="button_1"/>
+      </form>
+    </div>
+  </section>
+  <section id="main">
+  <div class="container">
+    <article id="main-col">
+      <h1 class="page-title">About Us </h1>
+      <p>Vivamus maximus quam non sodales gravida. Morbi sem metus, tempus sit amet est auctor, molestie maximus dolor. Curabitur feugiat tincidunt hendrerit. Vivamus porttitor sit amet enim at feugiat. Cras condimentum nec urna molestie sodales. Maecenas a ligula at risus bibendum convallis. Sed pretium porttitor felis, eu elementum sem. Duis iaculis vulputate dolor, et consequat nisi pharetra nec. Aliquam efficitur nibh vitae tristique scelerisque. Integer eu orci semper, dignissim ipsum sed, consectetur tortor. Suspendisse tristique nisi et ex pulvinar consectetur. Nunc tincidunt egestas suscipit. Aenean eu nulla et lacus fermentum scelerisque nec eu lacus. Mauris facilisis malesuada augue, in finibus metus convallis vitae. Curabitur placerat scelerisque ante at aliquet.
+      </p>
+      <p class="dark">Nullam turpis turpis, semper a feugiat vitae, interdum eget nulla. Praesent vehicula dui vitae ipsum tristique fringilla. Vivamus a massa dui. Vestibulum et sem non dui rutrum ornare consequat ac diam. In fermentum bibendum massa, ut rhoncus mi sollicitudin eu. Vivamus consequat consequat lacinia. Duis est orci, consectetur a nisi eu, bibendum elementum orci. Donec sed posuere urna, vulputate vulputate mauris. Etiam orci sem, tempor eget justo ac, molestie sollicitudin felis. </p>
+      </P>
+    </article>
+    <aside id="sidebar">
+      <div class="dark">
+        <h3>What we do </h3>
+        <p> quam non sodales gravida. Morbi sem metus, tempus sit amet est auctor, molestie maximus dolor. Curabitur feugiat tincidunt hendrerit. Vivamus porttitor sit amet enim at feugiat. Cras condimentum nec urna molestie sodales. Maecenas a ligula at risus bibendum convallis. Sed pretium porttitor felis, eu elementum sem.</p>
+    </div>
+    </aside>
+  </div>
+  </section>
+  <footer>
+    <p>Medinfo Copyright &copy,2018</p>
+  </body>
+</html>

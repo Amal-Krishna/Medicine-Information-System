@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This website helps you to easily find any information about medicines and it's availability">
+    <meta name="keywords" content="medicine information,medicine avilability,medicine help,medicine search">
+    <meta name="author" content="Amal Krishna">
+    <title>Medinfo | News </title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script type="text/javascript">
+      function check()
+      {
+        var x = document.getElementById('med').value;
+        if(x == "")
+        {
+          alert("pleace enter a valid name !");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <header>
+    <div class="container" >
+      <div id="branding" >
+         <h1><span class="highlight">Med</span> Info</h1>
+       </div>
+       <nav>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="categories.html">Categories</a></li>
+           <li class="current"><a href="news.html">News</a></li>
+           <li><a href="about.html">About</a></li>
+         </ul>
+       </nav>
+     </div>
+  </header>
+  <section id="searching">
+    <div class="container">
+      <h1>Search </h1>
+      <form action="" method="post" onsubmit="check()">
+        <input id="med" type="text" name="medicine" placeholder="search"/>
+        <input type="submit"  value="Search" class="button_1"/>
+      </form>
+    </div>
+  </section>
+  <section id="main">
+  <div class="container">
+    <article id="main-col">
+      <h1 class="page-title">News </h1>
+      <h1 class="card"><b>Health News</b></h1>
+      <p> Proin pulvinar id justo vel mollis.velit velit tristique nulla, rhoncus consectetur nibh dui nec velit. Aliquam vitae pretium risus. </p>
+      <p>Proin pulvinar id justo vel mollis. Fusce porttitor congue accumsan. Praesent pretium, ligula vel porttitor fermentum, velit velit tristique nulla, rhoncus consectetur nibh dui nec velit. Aliquam vitae pretium risus. Donec justo enim, congue quis sollicitudin in, ullamcorper id </p>
+      <p>Proin pulvinar id justo vel mollis. Fusce porttitor congue accumsan. Praesent pretium, ligula vel porttitor fermentum, velit velit tristique nulla, rhoncus consectetur nibh dui nec velit. Aliquam vitae pretium risus. Donec justo enim, congue quis sollicitudin in, ullamcorper id </p>
+      <h1 class="card">Medical News For Health Professionals</h1>
+      <p>Maecenas tortor arcu, lobortis at feugiat quis, placerat non arcu. Duis vel facilisis enim. Vivamus imperdiet purus et augue interdum, vitae semper ante lacinia. Praesen </p>
+      <h1 class="card">Special Reports</h1>
+      <p>Curabitur at varius urna. Praesent vestibulum dolor sed blandit molestie. Vestibulum placerat commodo dui, sagittis convallis ligula blandit ut. Donec dapibus pharetra tristiq</p>
+  </section>
+  <footer>
+    <p>Medinfo Copyright &copy,2018</p>
+  </body>
+</html>

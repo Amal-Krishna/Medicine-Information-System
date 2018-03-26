@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This website helps you to easily find any information about medicines and it's availability">
+    <meta name="keywords" content="medicine information,medicine avilability,medicine help,medicine search">
+    <meta name="author" content="Amal Krishna">
+    <title>Medinfo | Categories</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script type="text/javascript">
+      function check()
+      {
+        var x = document.getElementById('med').value;
+        if(x == "")
+        {
+          alert("pleace enter a valid name !");
+          return false;
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function check2()
+      {
+        var x = document.getElementById('l1').value;
+        if(x == "")
+        {
+          alert("pleace enter a valid entry !");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <header>
+    <div class="container" >
+      <div id="branding" >
+         <h1><span class="highlight">Med</span> Info</h1>
+       </div>
+       <nav>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li class="current"><a href="categories.html">Categories</a></li>
+           <li><a href="news.html">News</a></li>
+           <li><a href="about.html">About</a></li>
+         </ul>
+       </nav>
+     </div>
+  </header>
+  <section id="searching">
+    <div class="container">
+      <h1>Search </h1>
+      <form action="" method="post" onsubmit="check()">
+        <input id="med" type="text" name="medicine" placeholder="search"/>
+        <input type="submit"  value="Search" class="button_1"/>
+      </form>
+    </div>
+  </section>
+  <section id="main">
+  <div class="container">
+    <article id="main-col">
+      <h1 class="page-title">Categories </h1>
+      <ul id="categories">
+        <li><h3> Medicine A-Z</h3> </li>
+        <li><h3> General Medicine</h3> </li>
+        <li><h3> Active Ingredients A-Z</h3> </li>
+        <li><h3> Discontinued Medicines</h3> </li>
+        <li><h3> Medicine wih Black Triangle</h3> </li>
+        <li><h3> Reported Side Effects</h3> </li>
+        <li><h3> RMM Directory</h3> </li>
+      </ul>
+    </article>
+    <aside id="sidebar">
+      <div class="dark">
+        <h3>Write A Quote</h3>
+        <form class="quote" action="" method="post" onsubmit="check2()">
+          <div>
+            <label>Name </label><br>
+            <input id="l1" type="text" placeholder="Name"/>
+          </div>
+          <div>
+            <label>Email </label><br>
+            <input id="l1" type="email" placeholder="Enter email"/>
+          </div>
+          <div>
+            <label>Message </label><br>
+            <textarea id="l1" placeholder="Enter the message"></textarea>
+          </div>
+          <button class="button_1" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+  </section>
+  <footer>
+    <p>Medinfo Copyright &copy,2018</p>
+  </body>
+</html>

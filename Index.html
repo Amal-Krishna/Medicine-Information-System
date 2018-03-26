@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This website helps you to easily find any information about medicines and it's availability">
+    <meta name="keywords" content="medicine information,medicine avilability,medicine help,medicine search">
+    <meta name="author" content="Amal Krishna">
+    <title>Medinfo | Welcome </title>
+    <link rel="stylesheet" href="css\style.css" />
+    <script type="text/javascript">
+      function check()
+      {
+        var x = document.getElementById('med').value;
+        if(x == "")
+        {
+          alert("pleace enter a valid name !");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+  <header>
+    <div class="container" >
+      <div id="branding" >
+         <h1><span class="highlight">Med</span> Info</h1>
+       </div>
+       <nav>
+         <ul>
+           <li class="current"><a href="index.html">Home</a></li>
+           <li><a href="categories.html">Categories</a></li>
+           <li><a href="news.html">News</a></li>
+           <li><a href="about.html">About</a></li>
+         </ul>
+       </nav>
+     </div>
+  </header>
+  <section id="showcase" >
+    <div class="container">
+     <h1>Search any medicine with ease</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus massa vitae placerat laoreet</p>
+    </div>
+  </section>
+  <section id="searching">
+    <div class="container">
+      <h1>Search </h1>
+      <form action="" method="post" onsubmit="check()">
+        <input id="med" type="text" name="medicine" placeholder="search"/>
+        <input type="submit"  value="Search" class="button_1"/>
+      </form>
+    </div>
+  </section>
+  <section id="boxes">
+  <div class="container">
+    <div class="box">
+      <img src="img\images.jpg" alt="no image" />
+      <h3>Consumer Drug Sources</h3>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="box">
+      <img src="img\images (1).jpg" alt="no image" />
+      <h3>Professional Drug Sources</h3>
+      <p> Pellentesque rhoncus massa vitae placerat laoreet</p>
+    </div>
+    <div class="box">
+      <img src="img\download.jpg" alt="no image" />
+      <h3>Natural Drug Sources</h3>
+      <p> sit consectetur adipiscing Pellentesque rhoncus massa vitae </p>
+    </div>
+  </div>
+  </section>
+  <footer>
+    <p>Medinfo Copyright &copy,2018</p>
+  </body>
+</html>
